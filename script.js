@@ -1,6 +1,7 @@
 
 function createGreeting() {
-    console.log("Hi my name is Brandon and I'm 33.");
+    return "Hi my name is Brandon and I'm 33.";
 }
 
-createGreeting();
+const greeting1 = createGreeting();
+console.log(greeting1);
