@@ -1,3 +1,5 @@
+// Drill 1
+
 
 function yearOfBirth(age) {
     if (age < 0){
@@ -33,3 +35,23 @@ catch(e) {
 }
 
 
+// Drill 2
+
+function jediName(firstName, lastName) {
+    return lastName.slice(0, 3) + firstName.slice(0, 2);
+}
+
+function beyond(num) {
+    if (isFinite(num) && num > 0) {
+        console.log('To infinity');
+    }
+    if (isFinite(num) && num < 0) {
+        console.log('To negative infinity');
+    }
+    if (num === 0) {
+        console.log('Staying home');
+    }
+    else {
+        console.log('And beyond');
+    }
+}
