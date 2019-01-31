@@ -9,8 +9,12 @@ function yearOfBirth(age) {
 }
 
 function createGreeting(name, age) {
+    if (name === undefined || age === undefined) {
+        throw new Error("Arguments not valid.");
+    }
     const yob = yearOfBirth(age);
     return `"Hi my name is ${name} and I'm ${age}. I was born in ${yearOfBirth}"`;
+
 }
 
 try {
