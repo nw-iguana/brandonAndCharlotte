@@ -109,3 +109,25 @@ function daysInAMonth(month, leapYear) {
     // what to do with february???????????????
 }
 
+
+function rockPaperScissors(num) {
+    const randomNo = Math.floor(Math.random() * 3) + 1;
+    if (num > 3) {
+    throw new Error('Number must be 1, 2, or 3.');
+    }
+    else if (num === randomNo) {
+        console.log('tie');
+    }
+    else if (num < randomNo) {
+        console.log('computer wins');
+    }
+    else if (num === 3 && randomNo === 1) {
+        console.log('computer wins');
+    }
+    else if (randomNo < num) {
+        console.log('user wins');
+    }
+    else if (randomNo === 3 && num === 1) {
+        console.log('user wins');
+    }
+}
