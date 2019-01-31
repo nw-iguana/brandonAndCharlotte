@@ -116,18 +116,18 @@ function rockPaperScissors(num) {
     throw new Error('Number must be 1, 2, or 3.');
     }
     else if (num === randomNo) {
-        console.log('tie');
+        return 'tie';
     }
     else if (num < randomNo) {
-        console.log('computer wins');
+        return 'computer wins';
     }
     else if (num === 3 && randomNo === 1) {
-        console.log('computer wins');
+        return 'computer wins';
     }
     else if (randomNo < num) {
-        console.log('user wins');
+        return 'user wins';
     }
     else if (randomNo === 3 && num === 1) {
-        console.log('user wins');
+        return 'user wins';
     }
 }
