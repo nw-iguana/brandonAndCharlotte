@@ -12,6 +12,9 @@ function createGreeting(name, age) {
     if (name === undefined || age === undefined) {
         throw new Error("Arguments not valid.");
     }
+    else if (isNaN(age) || typeof name !== "string") {
+        throw new TypeError();
+    }
     const yob = yearOfBirth(age);
     return `"Hi my name is ${name} and I'm ${age}. I was born in ${yearOfBirth}"`;
 
