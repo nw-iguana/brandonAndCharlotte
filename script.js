@@ -102,12 +102,25 @@ function daysInAMonth(month, leapYear) {
         case 'November':
             console.log(month + ' has 30 days.');
             break;
+        case 'February':
+        case leapYear === false:
+            console.log(month + ' has 28 days.');
+            break;
+        case 'February':
+        case leapYear === true:
+            console.log(month + ' has 29 days.');
+            break;
         default:
             throw new Error('Must provide a valid month.');
             break;
     }
-    // what to do with february???????????????
 }
+
+daysInAMonth('February', true);
+daysInAMonth('February', false);
+daysInAMonth('July', true);
+daysInAMonth('September', true);
+daysInAMonth('bacon and eggs', true);
 
 
 function rockPaperScissors(num) {
